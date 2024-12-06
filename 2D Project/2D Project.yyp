@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"BLANK GAME",
+  "%Name":"2D Project",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -32,14 +32,30 @@
   "MetaData":{
     "IDEVersion":"2024.8.1.171",
   },
-  "name":"BLANK GAME",
+  "name":"2D Project",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Obj_door","path":"objects/Obj_door/Obj_door.yy",},},
+    {"id":{"name":"Obj_enemy","path":"objects/Obj_enemy/Obj_enemy.yy",},},
+    {"id":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},},
+    {"id":{"name":"Obj_student","path":"objects/Obj_student/Obj_student.yy",},},
+    {"id":{"name":"Obj_teacher","path":"objects/Obj_teacher/Obj_teacher.yy",},},
+    {"id":{"name":"Rm_base","path":"rooms/Rm_base/Rm_base.yy",},},
+    {"id":{"name":"Rm_class","path":"rooms/Rm_class/Rm_class.yy",},},
+    {"id":{"name":"Rm_outside","path":"rooms/Rm_outside/Rm_outside.yy",},},
+    {"id":{"name":"Spr_Background","path":"sprites/Spr_Background/Spr_Background.yy",},},
+    {"id":{"name":"Spr_door","path":"sprites/Spr_door/Spr_door.yy",},},
+    {"id":{"name":"Spr_enemy","path":"sprites/Spr_enemy/Spr_enemy.yy",},},
+    {"id":{"name":"Spr_player","path":"sprites/Spr_player/Spr_player.yy",},},
+    {"id":{"name":"Spr_student","path":"sprites/Spr_student/Spr_student.yy",},},
+    {"id":{"name":"Spr_teacher","path":"sprites/Spr_teacher/Spr_teacher.yy",},},
+    {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Rm_base","path":"rooms/Rm_base/Rm_base.yy",},},
+    {"roomId":{"name":"Rm_class","path":"rooms/Rm_class/Rm_class.yy",},},
+    {"roomId":{"name":"Rm_outside","path":"rooms/Rm_outside/Rm_outside.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
