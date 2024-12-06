@@ -1,5 +1,5 @@
 /// @description Variables
 
-movement_speed = 3
+movement_speed = 3;
 
 

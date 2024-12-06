@@ -15,6 +15,7 @@
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Level","folderPath":"folders/Objects/Level.yy","name":"Level","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"NPCs","folderPath":"folders/Objects/NPCs.yy","name":"NPCs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -35,6 +36,7 @@
   },
   "name":"2D Project",
   "resources":[
+    {"id":{"name":"Obj_collision_parent","path":"objects/Obj_collision_parent/Obj_collision_parent.yy",},},
     {"id":{"name":"Obj_door","path":"objects/Obj_door/Obj_door.yy",},},
     {"id":{"name":"Obj_enemy","path":"objects/Obj_enemy/Obj_enemy.yy",},},
     {"id":{"name":"Obj_imput","path":"objects/Obj_imput/Obj_imput.yy",},},
@@ -45,6 +47,7 @@
     {"id":{"name":"Rm_class","path":"rooms/Rm_class/Rm_class.yy",},},
     {"id":{"name":"Rm_outside","path":"rooms/Rm_outside/Rm_outside.yy",},},
     {"id":{"name":"gamepad_vars","path":"scripts/gamepad_vars/gamepad_vars.yy",},},
+    {"id":{"name":"Scr_level_functions","path":"scripts/Scr_level_functions/Scr_level_functions.yy",},},
     {"id":{"name":"Spr_Background","path":"sprites/Spr_Background/Spr_Background.yy",},},
     {"id":{"name":"Spr_door","path":"sprites/Spr_door/Spr_door.yy",},},
     {"id":{"name":"Spr_enemy","path":"sprites/Spr_enemy/Spr_enemy.yy",},},

@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_teacher",
+  "%Name":"Obj_collision_parent",
   "eventList":[],
   "managed":true,
-  "name":"Obj_teacher",
+  "name":"Obj_collision_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"NPCs",
-    "path":"folders/Objects/NPCs.yy",
+    "name":"Level",
+    "path":"folders/Objects/Level.yy",
   },
-  "parentObjectId":{
-    "name":"Obj_collision_parent",
-    "path":"objects/Obj_collision_parent/Obj_collision_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Spr_teacher",
-    "path":"sprites/Spr_teacher/Spr_teacher.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
