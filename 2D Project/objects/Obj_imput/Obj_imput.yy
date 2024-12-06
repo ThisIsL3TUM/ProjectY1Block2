@@ -1,16 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_teacher",
-  "eventList":[],
+  "%Name":"Obj_imput",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":75,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"Obj_teacher",
+  "name":"Obj_imput",
   "overriddenProperties":[],
   "parent":{
-    "name":"NPCs",
-    "path":"folders/Objects/NPCs.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -27,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Spr_teacher",
-    "path":"sprites/Spr_teacher/Spr_teacher.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
