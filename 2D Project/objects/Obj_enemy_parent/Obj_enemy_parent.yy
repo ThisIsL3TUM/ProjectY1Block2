@@ -1,17 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_enemy",
-  "eventList":[],
+  "%Name":"Obj_enemy_parent",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Obj_sword_slash","path":"objects/Obj_sword_slash/Obj_sword_slash.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"Obj_enemy",
+  "name":"Obj_enemy_parent",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemy",
     "path":"folders/Objects/NPCs/Enemy.yy",
   },
   "parentObjectId":{
-    "name":"Obj_enemy_parent",
-    "path":"objects/Obj_enemy_parent/Obj_enemy_parent.yy",
+    "name":"Obj_collision_parent",
+    "path":"objects/Obj_collision_parent/Obj_collision_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -30,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Spr_enemy",
-    "path":"sprites/Spr_enemy/Spr_enemy.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
