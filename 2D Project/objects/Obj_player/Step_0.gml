@@ -6,6 +6,7 @@ var _vertical_move = keyboard_check(ord("S")) -  keyboard_check(ord("W"));
 
 //variables attack
 var _melee_attack = mouse_check_button_pressed(mb_left);
+var _powerup = keyboard_check(vk_space);
 
 //variable that detects gamepad input
 var _gp = global.gamepad_main;
@@ -18,6 +19,7 @@ if (_gp != undefined){
    _horizontal_move += gamepad_axis_value(_gp, gp_axislh);
    _vertical_move += gamepad_axis_value(_gp, gp_axislv);
    _melee_attack += gamepad_button_check_pressed(_gp, gp_face3);
+   _powerup += gamepad_button_check_pressed(_gp, gp_face4);
    
 }
 
@@ -96,4 +98,55 @@ if _melee_attack != 0 {
 	_sword.image_angle = direction;
 
 
+}
+
+//power up
+if _powerup != 0 {
+	
+	//eldritch blast ability
+	if _spell_type = _spell_category[0]{
+		
+		show_debug_message("ELDRITCH BLAST!");
+		
+	}
+	
+	//teleport ability
+	if _spell_type = _spell_category[1]{
+		
+		show_debug_message("TELEPORT");
+		
+	}
+	
+	//fireball ability
+	if _spell_type = _spell_category[2]{
+		
+		show_debug_message("FIREBALL!");
+		
+	}
+}
+
+//categorization spells
+
+//changing to Eldritch Blast
+if (keyboard_check_pressed(ord("1"))){
+		
+	_spell_type = _spell_category[0];
+	show_debug_message("Changed to: ELDRITCH BLAST");
+	
+}
+
+//changing to Teleport
+if (keyboard_check_pressed(ord("2"))){
+		
+	_spell_type = _spell_category[1];
+	show_debug_message("Changed to: TELEPORT");
+	
+}
+
+//changing to Fireball
+if (keyboard_check_pressed(ord("3"))){
+		
+	_spell_type = _spell_category[2];
+	show_debug_message("Changed to: FIREBALL");
+	
 }

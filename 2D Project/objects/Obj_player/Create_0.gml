@@ -12,4 +12,6 @@ enum PLAYERSTATE
 	ATTACK_MELEE
 }
 
+_spell_category = ["Eldrich Blast", "Teleport", "Fireball"]
+_spell_type = _spell_category[0];
 
