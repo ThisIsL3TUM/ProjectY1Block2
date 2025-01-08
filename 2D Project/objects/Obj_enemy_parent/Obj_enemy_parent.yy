@@ -3,6 +3,9 @@
   "%Name":"Obj_enemy_parent",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Obj_sword_slash","path":"objects/Obj_sword_slash/Obj_sword_slash.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Obj_eldritch_blast","path":"objects/Obj_eldritch_blast/Obj_eldritch_blast.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Obj_teleport","path":"objects/Obj_teleport/Obj_teleport.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Obj_fireball","path":"objects/Obj_fireball/Obj_fireball.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Obj_enemy_parent",

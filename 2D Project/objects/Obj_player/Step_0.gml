@@ -6,10 +6,11 @@ var _vertical_move = keyboard_check(ord("S")) -  keyboard_check(ord("W"));
 
 //variables attack
 var _melee_attack = mouse_check_button_pressed(mb_left);
-var _powerup = keyboard_check(vk_space);
+var _powerup = keyboard_check_pressed(vk_space);
 
 //variable that detects gamepad input
 var _gp = global.gamepad_main;
+var _gp_active = false; //detects if gamepad is active or not
 
 //sets up gamepad controls
 //we use left stick for movement + X on the Xbox controller for the melee attack
@@ -21,6 +22,7 @@ if (_gp != undefined){
    _melee_attack += gamepad_button_check_pressed(_gp, gp_face3);
    _powerup += gamepad_button_check_pressed(_gp, gp_face4);
    
+   _gp_active = true;
 }
 
 //makes sure that keyboard and gamepad aren't used at the same time to speed up commands
@@ -101,19 +103,51 @@ if _melee_attack != 0 {
 }
 
 //power up
-if _powerup != 0 {
+if _powerup != 0  && _spell_cooldown == false{
 	
 	//eldritch blast ability
 	if _spell_type = _spell_category[0]{
 		
+		//if _spell_cooldown = false{
+		
 		show_debug_message("ELDRITCH BLAST!");
+		if(_spell_active == false){
+			
+			_spell_active = true
+			_spell_cooldown = true
+			//if _gp_active = true{
+				
+				//var _aim_direction_x = gamepad_axis_value(_gp, gp_axisrh);
+				//var _aim_direction_y = gamepad_axis_value(_gp, gp_axisrv);
+				
+				//if abs(_aim_direction_x) > 0.8 || abs(_aim_direction_y) > 0.8 {
+					
+					//_eldritch.direction = point_direction(x, y, _aim_direction_x, _aim_direction_y);
+					
+					//}
+			
+			//} 
+			//else {
+				
+				_spell_direction = point_direction(x, y, mouse_x, mouse_y);
+			
+			//}
+			
+		
+		}
 		
 	}
+	
 	
 	//teleport ability
 	if _spell_type = _spell_category[1]{
 		
+		x = mouse_x; y = mouse_y;
 		show_debug_message("TELEPORT");
+		_spell_cooldown = true;
+		var _teleport_circle = instance_create_layer(x, y, "Inst_Player", Obj_teleport)
+		alarm[1] = 70;
+		alarm[0] = 120;
 		
 	}
 	
@@ -125,6 +159,29 @@ if _powerup != 0 {
 	}
 }
 
+//timig Eldritch Blast
+if(_spell_active == true) {
+		
+		if(_bullet_counter < 3 ) {
+			if(_timer == 0){
+				var _eldritch_bullet = instance_create_layer(x,y,"Inst_Player", Obj_eldritch_blast)
+				_eldritch_bullet.speed = 5;
+				_eldritch_bullet.direction = _spell_direction
+				_bullet_counter++
+				alarm[0] = 75 //resets cooldown
+				}
+			} 
+			else {
+				_bullet_counter = 0
+				_spell_active = false
+				// after the desired amount of bullets has been fired, the spell is "turned off" and stops creating bullets.
+				}
+		}
+		
+_timer = (_timer + 1) % 10
+//the timer indicates the amount of frames between the bullets, aka firing speed.
+		
+		
 //categorization spells
 
 //changing to Eldritch Blast

@@ -12,6 +12,17 @@ enum PLAYERSTATE
 	ATTACK_MELEE
 }
 
+//spell categories
 _spell_category = ["Eldrich Blast", "Teleport", "Fireball"]
 _spell_type = _spell_category[0];
+_spell_cooldown = false
 
+//spell activation
+_spell_active = false
+
+//spell direction
+_spell_direction = 0;
+
+//Eldritch Blast
+_timer = 0
+_bullet_counter = 0
