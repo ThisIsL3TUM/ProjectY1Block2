@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_fireball",
+  "%Name":"Obj_explosion",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Obj_fireballCollide","path":"objects/Obj_fireballCollide/Obj_fireballCollide.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_fireball",
+  "name":"Obj_explosion",
   "overriddenProperties":[],
   "parent":{
     "name":"Spell Effects",
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_fireball",
-    "path":"sprites/Spr_fireball/Spr_fireball.yy",
+    "name":"Spr_explosion",
+    "path":"sprites/Spr_explosion/Spr_explosion.yy",
   },
   "spriteMaskId":null,
   "visible":true,
