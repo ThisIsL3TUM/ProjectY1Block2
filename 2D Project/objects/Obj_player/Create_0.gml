@@ -12,6 +12,11 @@ enum PLAYERSTATE
 	ATTACK_MELEE
 }
 
+//stats player
+hp = 10
+hp_total = hp
+damage = 1
+
 //spell categories
 _spell_category = ["Eldrich Blast", "Teleport", "Fireball"]
 _spell_type = _spell_category[0];

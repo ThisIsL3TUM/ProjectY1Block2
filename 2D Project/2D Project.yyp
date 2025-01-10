@@ -41,6 +41,7 @@
   "resources":[
     {"id":{"name":"Obj_collision_parent","path":"objects/Obj_collision_parent/Obj_collision_parent.yy",},},
     {"id":{"name":"Obj_door","path":"objects/Obj_door/Obj_door.yy",},},
+    {"id":{"name":"Obj_editor_wall","path":"objects/Obj_editor_wall/Obj_editor_wall.yy",},},
     {"id":{"name":"Obj_eldritch_blast","path":"objects/Obj_eldritch_blast/Obj_eldritch_blast.yy",},},
     {"id":{"name":"Obj_enemy_parent","path":"objects/Obj_enemy_parent/Obj_enemy_parent.yy",},},
     {"id":{"name":"Obj_enemy","path":"objects/Obj_enemy/Obj_enemy.yy",},},
@@ -61,6 +62,7 @@
     {"id":{"name":"Scr_level_functions","path":"scripts/Scr_level_functions/Scr_level_functions.yy",},},
     {"id":{"name":"Spr_Background","path":"sprites/Spr_Background/Spr_Background.yy",},},
     {"id":{"name":"Spr_door","path":"sprites/Spr_door/Spr_door.yy",},},
+    {"id":{"name":"Spr_editor_Wall","path":"sprites/Spr_editor_Wall/Spr_editor_Wall.yy",},},
     {"id":{"name":"Spr_eldritch_blast","path":"sprites/Spr_eldritch_blast/Spr_eldritch_blast.yy",},},
     {"id":{"name":"Spr_enemy","path":"sprites/Spr_enemy/Spr_enemy.yy",},},
     {"id":{"name":"Spr_explosion","path":"sprites/Spr_explosion/Spr_explosion.yy",},},
