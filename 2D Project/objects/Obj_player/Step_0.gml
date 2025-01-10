@@ -155,7 +155,17 @@ if _powerup != 0  && _spell_cooldown == false{
 	if _spell_type = _spell_category[2]{
 		
 		show_debug_message("FIREBALL!");
-		
+		//spellDirection variable locks the spell in place. Not too important for this spell. point_direction will also work.
+
+	_spell_cooldown = true
+	var Fireball = instance_create_layer(x,y,"inst_Player", Obj_fireball)
+		Fireball.speed = 10;
+		Fireball.direction = point_direction(x, y, mouse_x, mouse_y)
+	//creates the collision object so the fireball "knows" when to explode and create the explosion object.
+	//Creation of the explosion is done in the Obj_fireball step code.
+	var FireballCollision = instance_create_layer(mouse_x, mouse_y, "inst_Player", Obj_fireballCollide)
+	alarm[0] = 120
+//alarm 4 destroys the explosion object and alarm 1 is the cooldown
 	}
 }
 
