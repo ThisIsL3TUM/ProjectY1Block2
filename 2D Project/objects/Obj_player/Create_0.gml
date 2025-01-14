@@ -1,6 +1,6 @@
 /// @description Variables
 
-movement_speed = 3;
+movement_speed = 6;
 direction = 0; //degrees
 
 //will work over those later

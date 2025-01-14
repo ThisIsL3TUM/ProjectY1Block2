@@ -56,6 +56,7 @@
     {"id":{"name":"Obj_teleport","path":"objects/Obj_teleport/Obj_teleport.yy",},},
     {"id":{"name":"Rm_base","path":"rooms/Rm_base/Rm_base.yy",},},
     {"id":{"name":"Rm_class","path":"rooms/Rm_class/Rm_class.yy",},},
+    {"id":{"name":"Rm_dungeon","path":"rooms/Rm_dungeon/Rm_dungeon.yy",},},
     {"id":{"name":"Rm_outside","path":"rooms/Rm_outside/Rm_outside.yy",},},
     {"id":{"name":"gamepad_vars","path":"scripts/gamepad_vars/gamepad_vars.yy",},},
     {"id":{"name":"Scr_aim_direction","path":"scripts/Scr_aim_direction/Scr_aim_direction.yy",},},
@@ -86,6 +87,7 @@
     {"roomId":{"name":"Rm_base","path":"rooms/Rm_base/Rm_base.yy",},},
     {"roomId":{"name":"Rm_class","path":"rooms/Rm_class/Rm_class.yy",},},
     {"roomId":{"name":"Rm_outside","path":"rooms/Rm_outside/Rm_outside.yy",},},
+    {"roomId":{"name":"Rm_dungeon","path":"rooms/Rm_dungeon/Rm_dungeon.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
