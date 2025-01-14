@@ -13,7 +13,7 @@ enum PLAYERSTATE
 }
 
 //stats player
-hp = 10
+hp = 4
 hp_total = hp
 damage = 1
 
