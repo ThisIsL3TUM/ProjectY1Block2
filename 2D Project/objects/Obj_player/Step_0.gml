@@ -93,6 +93,14 @@ if _vertical_move != 0 {
      }
 }
 
+//to check sprites and direction that player is facing
+if _horizontal_move != 0 or _vertical_move != 0 {
+	
+	direction = point_direction(0, 0, _horizontal_move, _vertical_move)
+
+}
+
+
 //melee attack
 if _melee_attack != 0 {
 	
