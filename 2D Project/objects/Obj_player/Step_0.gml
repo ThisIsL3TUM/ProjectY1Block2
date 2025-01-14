@@ -167,7 +167,7 @@ if _powerup != 0  && _spell_cooldown == false{
 
 	_spell_cooldown = true
 	var Fireball = instance_create_layer(x,y,"inst_Player", Obj_fireball)
-		Fireball.speed = 10;
+		Fireball.speed = 3;
 		Fireball.direction = point_direction(x, y, mouse_x, mouse_y)
 	//creates the collision object so the fireball "knows" when to explode and create the explosion object.
 	//Creation of the explosion is done in the Obj_fireball step code.
