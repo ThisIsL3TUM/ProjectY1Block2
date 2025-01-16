@@ -6,7 +6,7 @@ _target_y = y
 
 alarm[0] = 60
 
-_tilemap = layer_tilemap_get_id("Tiles_Collision");
+_tilemap = layer_tilemap_get_id("Walls");
 
 //knockback enemy
 kb_x = 0
