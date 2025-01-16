@@ -153,7 +153,7 @@ if _powerup != 0  && _spell_cooldown == false{
 		x = mouse_x; y = mouse_y;
 		show_debug_message("TELEPORT");
 		_spell_cooldown = true;
-		var _teleport_circle = instance_create_layer(x, y, "Inst_Player", Obj_teleport)
+		var _teleport_circle = instance_create_layer(x, y, "Inst_projectiles", Obj_teleport)
 		alarm[1] = 70;
 		alarm[0] = 120;
 		
@@ -166,7 +166,7 @@ if _powerup != 0  && _spell_cooldown == false{
 		//spellDirection variable locks the spell in place. Not too important for this spell. point_direction will also work.
 
 	_spell_cooldown = true
-	var Fireball = instance_create_layer(x,y,"inst_Player", Obj_fireball)
+	var Fireball = instance_create_layer(x,y,"inst_projectiles", Obj_fireball)
 		Fireball.speed = 3;
 		Fireball.direction = point_direction(x, y, mouse_x, mouse_y)
 	//creates the collision object so the fireball "knows" when to explode and create the explosion object.
@@ -182,7 +182,7 @@ if(_spell_active == true) {
 		
 		if(_bullet_counter < 3 ) {
 			if(_timer == 0){
-				var _eldritch_bullet = instance_create_layer(x,y,"Inst_Player", Obj_eldritch_blast)
+				var _eldritch_bullet = instance_create_layer(x,y,"Inst_projectiles", Obj_eldritch_blast)
 				_eldritch_bullet.speed = 5;
 				_eldritch_bullet.direction = _spell_direction
 				_bullet_counter++
