@@ -18,6 +18,7 @@
     {"name":"inst_61F80BF8","path":"rooms/Rm_base/Rm_base.yy",},
     {"name":"inst_12E3EA88","path":"rooms/Rm_base/Rm_base.yy",},
     {"name":"inst_59D86D01","path":"rooms/Rm_base/Rm_base.yy",},
+    {"name":"inst_493CD6AE","path":"rooms/Rm_base/Rm_base.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -34,11 +35,14 @@
       ],"layers":[],"name":"Inst_student","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Inst_door","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_6A39BF42","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6A39BF42","objectId":{"name":"Obj_door","path":"objects/Obj_door/Obj_door.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_door","path":"objects/Obj_door/Obj_door.yy",},"propertyId":{"name":"Target","path":"objects/Obj_door/Obj_door.yy",},"resource":{"name":"Rm_class","path":"rooms/Rm_class/Rm_class.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Rm_class",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_door","path":"objects/Obj_door/Obj_door.yy",},"propertyId":{"name":"Target","path":"objects/Obj_door/Obj_door.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Rm_dungeon",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":96.0,},
         {"$GMRInstance":"v1","%Name":"inst_2E26746C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2E26746C","objectId":{"name":"Obj_door","path":"objects/Obj_door/Obj_door.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_door","path":"objects/Obj_door/Obj_door.yy",},"propertyId":{"name":"Target","path":"objects/Obj_door/Obj_door.yy",},"resource":{"name":"Rm_outside","path":"rooms/Rm_outside/Rm_outside.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Rm_outside",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":224.0,},
+        {"$GMRInstance":"v1","%Name":"inst_493CD6AE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_493CD6AE","objectId":{"name":"Obj_door","path":"objects/Obj_door/Obj_door.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_door","path":"objects/Obj_door/Obj_door.yy",},"propertyId":{"name":"Target","path":"objects/Obj_door/Obj_door.yy",},"resource":{"name":"Rm_dungeon","path":"rooms/Rm_dungeon/Rm_dungeon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Rm_dungeon",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":64.0,},
       ],"layers":[],"name":"Inst_door","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Inst_Player","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_4483C736","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4483C736","objectId":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":32.0,},
