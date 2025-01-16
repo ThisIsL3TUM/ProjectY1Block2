@@ -196,7 +196,7 @@ if(_spell_active == true) {
 				}
 		}
 		
-_timer = (_timer + 1) % 10
+_timer = (_timer + 1) % 15
 //the timer indicates the amount of frames between the bullets, aka firing speed.
 		
 		
