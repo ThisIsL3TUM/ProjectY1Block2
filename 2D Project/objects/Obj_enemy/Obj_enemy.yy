@@ -4,7 +4,9 @@
   "eventList":[],
   "managed":true,
   "name":"Obj_enemy",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_enemy_parent","path":"objects/Obj_enemy_parent/Obj_enemy_parent.yy",},"propertyId":{"name":"_move_speed_enemy","path":"objects/Obj_enemy_parent/Obj_enemy_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+  ],
   "parent":{
     "name":"Enemy",
     "path":"folders/Objects/NPCs/Enemy.yy",

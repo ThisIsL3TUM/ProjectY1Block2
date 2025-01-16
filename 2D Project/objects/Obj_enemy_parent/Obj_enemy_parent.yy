@@ -38,7 +38,7 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"_hp","filters":[],"listItems":[],"multiselect":false,"name":"_hp","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"_damage","filters":[],"listItems":[],"multiselect":false,"name":"_damage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"_distance_to_player","filters":[],"listItems":[],"multiselect":false,"name":"_distance_to_player","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"80","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"_distance_to_player","filters":[],"listItems":[],"multiselect":false,"name":"_distance_to_player","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"320","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"_move_speed_enemy","filters":[],"listItems":[],"multiselect":false,"name":"_move_speed_enemy","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
   ],
   "resourceType":"GMObject",
