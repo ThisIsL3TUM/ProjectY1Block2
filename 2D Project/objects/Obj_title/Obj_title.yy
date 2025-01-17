@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_teleport",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Obj_title",
+  "eventList":[],
   "managed":true,
-  "name":"Obj_teleport",
+  "name":"Obj_title",
   "overriddenProperties":[],
   "parent":{
-    "name":"Spell Effects",
-    "path":"folders/Objects/Spell Effects.yy",
+    "name":"Main Menu",
+    "path":"folders/Objects/Main Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_teleportation",
-    "path":"sprites/Spr_teleportation/Spr_teleportation.yy",
+    "name":"Spr_title",
+    "path":"sprites/Spr_title/Spr_title.yy",
   },
   "spriteMaskId":null,
   "visible":true,
