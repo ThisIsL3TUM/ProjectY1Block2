@@ -48,7 +48,6 @@
     {"id":{"name":"Obj_eldritch_blast","path":"objects/Obj_eldritch_blast/Obj_eldritch_blast.yy",},},
     {"id":{"name":"Obj_enemy_parent","path":"objects/Obj_enemy_parent/Obj_enemy_parent.yy",},},
     {"id":{"name":"Obj_enemy","path":"objects/Obj_enemy/Obj_enemy.yy",},},
-    {"id":{"name":"Obj_Exit","path":"objects/Obj_Exit/Obj_Exit.yy",},},
     {"id":{"name":"Obj_explosion","path":"objects/Obj_explosion/Obj_explosion.yy",},},
     {"id":{"name":"Obj_fireball","path":"objects/Obj_fireball/Obj_fireball.yy",},},
     {"id":{"name":"Obj_fireballCollide","path":"objects/Obj_fireballCollide/Obj_fireballCollide.yy",},},

@@ -13,7 +13,6 @@
     {"name":"inst_19F24733","path":"rooms/Rm_base/Rm_base.yy",},
     {"name":"inst_25A1F68E","path":"rooms/Rm_base/Rm_base.yy",},
     {"name":"inst_243F4527","path":"rooms/Rm_base/Rm_base.yy",},
-    {"name":"inst_279FDA5B","path":"rooms/Rm_base/Rm_base.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -27,7 +26,6 @@
         {"$GMRInstance":"v1","%Name":"inst_19F24733","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_19F24733","objectId":{"name":"Obj_editor_wall","path":"objects/Obj_editor_wall/Obj_editor_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":4.0,"scaleY":2.0,"x":384.0,"y":128.0,},
         {"$GMRInstance":"v1","%Name":"inst_25A1F68E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_25A1F68E","objectId":{"name":"Obj_editor_wall","path":"objects/Obj_editor_wall/Obj_editor_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":1.0,"x":256.0,"y":64.0,},
         {"$GMRInstance":"v1","%Name":"inst_243F4527","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_243F4527","objectId":{"name":"Obj_editor_wall","path":"objects/Obj_editor_wall/Obj_editor_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.0,"scaleY":4.0,"x":0.0,"y":608.0,},
-        {"$GMRInstance":"v1","%Name":"inst_279FDA5B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_279FDA5B","objectId":{"name":"Obj_Exit","path":"objects/Obj_Exit/Obj_Exit.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":32.0,},
       ],"layers":[],"name":"Inst_student","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Inst_projectiles","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Inst_projectiles","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Inst_Player","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

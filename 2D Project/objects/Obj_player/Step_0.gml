@@ -106,6 +106,12 @@ if _horizontal_move != 0 or _vertical_move != 0 {
 
 }
 
+//when player doesn't move, it's in idle mode
+if _horizontal_move = 0 and _vertical_move = 0 {
+	
+	sprite_index = Spr_player_idle
+
+}
 
 //melee attack
 if _melee_attack != 0 {
