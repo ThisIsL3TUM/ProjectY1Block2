@@ -31,3 +31,6 @@ _spell_direction = 0;
 //Eldritch Blast
 _timer = 0
 _bullet_counter = 0
+
+//Pause menu
+pause = false

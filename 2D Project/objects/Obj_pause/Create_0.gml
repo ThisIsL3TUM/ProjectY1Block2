@@ -5,5 +5,8 @@ pause = false;
 pauseSurf = -1;
 pauseSurfBuffer = -1;
 
-resH = 702;
+resH = 800;
 resW = 1280; 
+
+playerx = instance_nearest(x, y, Obj_player).x
+playery = instance_nearest(x, y, Obj_player).y
