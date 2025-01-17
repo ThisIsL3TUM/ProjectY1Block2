@@ -33,17 +33,21 @@ _vertical_move = clamp(_vertical_move, -1, 1);
 if _horizontal_move != 0 {
 
    x = x + 1 * movement_speed * _horizontal_move
+   show_debug_message(x);
+  
    
-   //this is to check direction (helpful for melee attacks)
+   //this is to check direction (helpful for melee attacks + sprite direction)
    
    //right
    if _horizontal_move = 1 {
-	   direction = 0; 
+	   direction = 0;
+	   sprite_index = Spr_player_walk_right;
    }
    
    //left
    if _horizontal_move = -1 {
 	   direction = 180;
+	   sprite_index = Spr_player_walk_left
    
    }
 
@@ -67,16 +71,18 @@ if _vertical_move != 0 {
 
      y = y + 1 * movement_speed * _vertical_move
 	 
+	 
 	 //this is to check direction (helpful for melee attacks)
 	 //down
 	 if _vertical_move = 1 {
-		 direction = 270 
-		 
+		 direction = 270
+		 sprite_index = Spr_player_walk_down
 	 }
 	 
 	 //up
 	 if _vertical_move = -1 {
 		 direction = 90
+		 sprite_index = Spr_player_walk_up
 		 
 	 }
 
