@@ -29,10 +29,7 @@
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level","folderPath":"folders/Sprites/Level.yy","name":"Level","resourceType":"GMFolder","resourceVersion":"2.0",},
-<<<<<<< HEAD
     {"$GMFolder":"","%Name":"Main Menu","folderPath":"folders/Sprites/Main Menu.yy","name":"Main Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
-=======
->>>>>>> revert-5-Main-menu-screen
     {"$GMFolder":"","%Name":"Player Sprite","folderPath":"folders/Sprites/Player Sprite.yy","name":"Player Sprite","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Spell Effects Sprites","folderPath":"folders/Sprites/Spell Effects Sprites.yy","name":"Spell Effects Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tiles","folderPath":"folders/Sprites/Tiles.yy","name":"Tiles","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -63,7 +60,6 @@
     {"id":{"name":"Obj_fireball","path":"objects/Obj_fireball/Obj_fireball.yy",},},
     {"id":{"name":"Obj_fireballCollide","path":"objects/Obj_fireballCollide/Obj_fireballCollide.yy",},},
     {"id":{"name":"Obj_imput","path":"objects/Obj_imput/Obj_imput.yy",},},
-    {"id":{"name":"Obj_pause","path":"objects/Obj_pause/Obj_pause.yy",},},
     {"id":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},},
     {"id":{"name":"Obj_student","path":"objects/Obj_student/Obj_student.yy",},},
     {"id":{"name":"Obj_sword_slash","path":"objects/Obj_sword_slash/Obj_sword_slash.yy",},},
