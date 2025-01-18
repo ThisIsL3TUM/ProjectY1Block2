@@ -166,7 +166,6 @@ if _powerup != 0  && _spell_cooldown == false{
 		show_debug_message("TELEPORT");
 		_spell_cooldown = true;
 		var _teleport_circle = instance_create_layer(x, y, "Inst_projectiles", Obj_teleport)
-		alarm[1] = 70;
 		alarm[0] = 120;
 		
 	}

@@ -1,2 +1,2 @@
-/// @description Eldritch Blast cooldown
+/// @description Spell cooldown
 _spell_cooldown = false

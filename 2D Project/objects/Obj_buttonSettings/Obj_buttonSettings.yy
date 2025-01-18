@@ -1,18 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_teleport",
+  "%Name":"Obj_buttonSettings",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_teleport",
-  "overriddenProperties":[],
+  "name":"Obj_buttonSettings",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_buttonParent","path":"objects/Obj_buttonParent/Obj_buttonParent.yy",},"propertyId":{"name":"button_text","path":"objects/Obj_buttonParent/Obj_buttonParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Settings",},
+  ],
   "parent":{
-    "name":"Spell Effects",
-    "path":"folders/Objects/Spell Effects.yy",
+    "name":"Main Menu",
+    "path":"folders/Objects/Main Menu.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Obj_buttonParent",
+    "path":"objects/Obj_buttonParent/Obj_buttonParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_teleportation",
-    "path":"sprites/Spr_teleportation/Spr_teleportation.yy",
+    "name":"Spr_button",
+    "path":"sprites/Spr_button/Spr_button.yy",
   },
   "spriteMaskId":null,
   "visible":true,
