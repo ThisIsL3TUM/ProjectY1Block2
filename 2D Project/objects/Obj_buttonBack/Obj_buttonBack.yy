@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_button",
-    "path":"sprites/Spr_button/Spr_button.yy",
+    "name":"Spr_button_new",
+    "path":"sprites/Spr_button_new/Spr_button_new.yy",
   },
   "spriteMaskId":null,
   "visible":true,
