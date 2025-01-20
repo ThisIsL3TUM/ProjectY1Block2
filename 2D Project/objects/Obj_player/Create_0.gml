@@ -19,6 +19,7 @@ enum PLAYERSTATE
 hp = 6
 hp_total = hp
 damage = 1
+can_move = true
 
 //spell categories
 _spell_category = ["Eldrich Blast", "Teleport", "Fireball"]
