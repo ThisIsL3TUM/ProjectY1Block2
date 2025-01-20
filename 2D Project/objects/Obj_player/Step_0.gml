@@ -182,7 +182,6 @@ if _powerup != 0  && _spell_cooldown == false{
 		Fireball.direction = point_direction(x, y, mouse_x, mouse_y)
 	//creates the collision object so the fireball "knows" when to explode and create the explosion object.
 	//Creation of the explosion is done in the Obj_fireball step code.
-	var FireballCollision = instance_create_layer(mouse_x, mouse_y, "inst_Player", Obj_fireballCollide)
 	alarm[0] = 120
 //alarm 4 destroys the explosion object and alarm 1 is the cooldown
 	}
