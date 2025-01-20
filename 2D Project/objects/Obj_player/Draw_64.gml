@@ -24,3 +24,12 @@ if(instance_exists(Obj_player)){
 	}
 
 }
+
+
+//Charge Bar
+if can_move = false
+{
+draw_sprite(Spr_chargeBarBg,0,x,y-20)
+draw_sprite_stretched(Spr_chargeBar,0,x,y-20,(burst_charge/burst_charge_max) * charge_bar_width,charge_bar_height)
+draw_sprite(Spr_chargeBarBorder,0,x,y-20)
+}

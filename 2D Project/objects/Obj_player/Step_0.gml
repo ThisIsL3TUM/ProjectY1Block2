@@ -30,7 +30,7 @@ _horizontal_move = clamp(_horizontal_move, -1, 1);
 _vertical_move = clamp(_vertical_move, -1, 1);
 
 //move horizontally
-if _horizontal_move != 0 {
+if _horizontal_move != 0 && can_move = true{
 
    x = x + 1 * movement_speed * _horizontal_move
    show_debug_message(x);
@@ -67,7 +67,7 @@ if _horizontal_move != 0 {
 
 
 //move vertically
-if _vertical_move != 0 {
+if _vertical_move != 0 && can_move = true{
 
      y = y + 1 * movement_speed * _vertical_move
 	 
@@ -158,15 +158,17 @@ if _powerup != 0  && _spell_cooldown == false{
 		
 	}
 	
+
 	
-	//teleport ability
+	//burst ability
 	if _spell_type = _spell_category[1]{
 		
-		x = mouse_x; y = mouse_y;
-		show_debug_message("TELEPORT");
+		can_move = false
+		show_debug_message("BURST");
 		_spell_cooldown = true;
-		var _teleport_circle = instance_create_layer(x, y, "Inst_projectiles", Obj_teleport)
-		alarm[0] = 120;
+		//If u change the value of alarm 1, also change the burst_charge variable to that value.
+		alarm[1] = 60
+		
 		
 	}
 	
@@ -224,7 +226,7 @@ if (keyboard_check_pressed(ord("1"))){
 if (keyboard_check_pressed(ord("2"))){
 		
 	_spell_type = _spell_category[1];
-	show_debug_message("Changed to: TELEPORT");
+	show_debug_message("Changed to: BURST");
 	
 }
 
