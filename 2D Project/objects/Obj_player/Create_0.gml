@@ -22,7 +22,7 @@ damage = 1
 can_move = true
 
 //spell categories
-_spell_category = ["Eldrich Blast", "Teleport", "Fireball"]
+_spell_category = ["Eldrich Blast", "Burst", "Fireball"]
 _spell_type = _spell_category[0];
 _spell_cooldown = false
 
@@ -45,9 +45,3 @@ fb_cd = 100
 fb_cd_max = fb_cd
 burst_charge = 60
 burst_charge_max = burst_charge
-
-//CD Sprite Variables
-charge_bar_width = 64
-charge_bar_height = 7
-charge_bar_x = x
-charge_bar_y = y-20
