@@ -24,3 +24,12 @@ if(instance_exists(Obj_player)){
 	}
 
 }
+
+if global.q1_active = true {
+	draw_sprite(Spr_kills, 0, 1200, 40)
+	if global.kills <10{
+	draw_text(1191,18,global.kills)}
+	else if global.kills>9{
+		draw_text(1181,18,global.kills)
+		}
+}

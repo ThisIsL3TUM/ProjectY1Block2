@@ -45,3 +45,14 @@ fb_cd = 100
 fb_cd_max = fb_cd
 burst_charge = 60
 burst_charge_max = burst_charge
+
+//Spell unlocking
+eb_ul = false
+burst_ul = false
+fb_ul = false
+
+//Quests
+global.q1_active = false
+global.q2_active = false
+global.q3_active = false
+global.kills = 0

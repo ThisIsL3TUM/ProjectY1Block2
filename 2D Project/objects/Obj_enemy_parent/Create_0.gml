@@ -11,3 +11,4 @@ _tilemap = layer_tilemap_get_id("Walls");
 //knockback enemy
 kb_x = 0
 kb_y = 0
+

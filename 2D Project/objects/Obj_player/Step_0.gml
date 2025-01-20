@@ -122,11 +122,21 @@ if _melee_attack != 0 {
 
 }
 
+if (keyboard_check_pressed(ord("Z"))){ 
+	eb_ul = true
+}
+if (keyboard_check_pressed(ord("X"))){ 
+	burst_ul = true
+}
+if (keyboard_check_pressed(ord("C"))){ 
+	fb_ul = true
+}
+
 //power up
 if _powerup != 0  && _spell_cooldown == false{
 	
 	//eldritch blast ability
-	if _spell_type = _spell_category[0]{
+	if _spell_type = _spell_category[0] && eb_ul = true{
 		
 		//if _spell_cooldown = false{
 		
@@ -161,7 +171,7 @@ if _powerup != 0  && _spell_cooldown == false{
 
 	
 	//burst ability
-	if _spell_type = _spell_category[1]{
+	if _spell_type = _spell_category[1] && burst_ul = true{
 		
 		can_move = false
 		show_debug_message("BURST");
@@ -173,7 +183,7 @@ if _powerup != 0  && _spell_cooldown == false{
 	}
 	
 	//fireball ability
-	if _spell_type = _spell_category[2]{
+	if _spell_type = _spell_category[2] && fb_ul = true{
 		
 		show_debug_message("FIREBALL!");
 		//spellDirection variable locks the spell in place. Not too important for this spell. point_direction will also work.
@@ -239,7 +249,7 @@ if (keyboard_check_pressed(ord("1"))){
 	
 }
 
-//changing to Teleport
+//changing to Burst
 if (keyboard_check_pressed(ord("2"))){
 		
 	_spell_type = _spell_category[1];
@@ -253,4 +263,9 @@ if (keyboard_check_pressed(ord("3"))){
 	_spell_type = _spell_category[2];
 	show_debug_message("Changed to: FIREBALL");
 	
+}
+
+
+if (keyboard_check_pressed(ord("Z")))
+{ global.q1_active = true
 }
