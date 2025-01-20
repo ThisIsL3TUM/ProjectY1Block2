@@ -105,6 +105,7 @@
     {"id":{"name":"Spr_teacher","path":"sprites/Spr_teacher/Spr_teacher.yy",},},
     {"id":{"name":"Spr_teleportation","path":"sprites/Spr_teleportation/Spr_teleportation.yy",},},
     {"id":{"name":"Spr_tiles","path":"sprites/Spr_tiles/Spr_tiles.yy",},},
+    {"id":{"name":"Spr_title_new","path":"sprites/Spr_title_new/Spr_title_new.yy",},},
     {"id":{"name":"Spr_title","path":"sprites/Spr_title/Spr_title.yy",},},
     {"id":{"name":"Spr_torch","path":"sprites/Spr_torch/Spr_torch.yy",},},
     {"id":{"name":"Sprite11","path":"sprites/Sprite11/Sprite11.yy",},},
