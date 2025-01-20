@@ -101,6 +101,7 @@
     {"id":{"name":"Spr_player_walk_up","path":"sprites/Spr_player_walk_up/Spr_player_walk_up.yy",},},
     {"id":{"name":"Spr_sign_direction","path":"sprites/Spr_sign_direction/Spr_sign_direction.yy",},},
     {"id":{"name":"Spr_student","path":"sprites/Spr_student/Spr_student.yy",},},
+    {"id":{"name":"Spr_sword_slash_new","path":"sprites/Spr_sword_slash_new/Spr_sword_slash_new.yy",},},
     {"id":{"name":"Spr_sword_slash","path":"sprites/Spr_sword_slash/Spr_sword_slash.yy",},},
     {"id":{"name":"Spr_teacher","path":"sprites/Spr_teacher/Spr_teacher.yy",},},
     {"id":{"name":"Spr_teleportation","path":"sprites/Spr_teleportation/Spr_teleportation.yy",},},

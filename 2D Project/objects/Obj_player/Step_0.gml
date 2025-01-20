@@ -8,7 +8,6 @@ var _vertical_move = keyboard_check(ord("S")) -  keyboard_check(ord("W"));
 var _melee_attack = mouse_check_button_pressed(mb_left);
 var _powerup = keyboard_check_pressed(vk_space);
 
-
 //variable that detects gamepad input
 var _gp = global.gamepad_main;
 var _gp_active = false; //detects if gamepad is active or not
@@ -31,7 +30,7 @@ _horizontal_move = clamp(_horizontal_move, -1, 1);
 _vertical_move = clamp(_vertical_move, -1, 1);
 
 //move horizontally
-if _horizontal_move != 0 {
+if _horizontal_move != 0 && can_move = true{
 
    x = x + 1 * movement_speed * _horizontal_move
    show_debug_message(x);
@@ -68,7 +67,7 @@ if _horizontal_move != 0 {
 
 
 //move vertically
-if _vertical_move != 0 {
+if _vertical_move != 0 && can_move = true{
 
      y = y + 1 * movement_speed * _vertical_move
 	 
@@ -136,36 +135,33 @@ if _powerup != 0  && _spell_cooldown == false{
 			
 			_spell_active = true
 			_spell_cooldown = true
-			
-			if (_gp = undefined){
+			if _gp != undefined{
 				
-			_spell_direction = point_direction(x, y, mouse_x, mouse_y);
+				var _aim_direction_x = gamepad_axis_value(_gp, gp_axisrh);
+				var _aim_direction_y = gamepad_axis_value(_gp, gp_axisrv);
+				
+				if abs(_aim_direction_x) > 0.8 || abs(_aim_direction_y) > 0.8 {
+					
+					_spell_direction = point_direction(0, 0, _aim_direction_x, _aim_direction_y);
+					
+					}
+			
+			} 
+			else {
+				
+				_spell_direction = point_direction(x, y, mouse_x, mouse_y);
 			
 			}
-			else{
-				
-				var controller_x = gamepad_axis_value(_gp, gp_axisrh)
-				var controller_y = gamepad_axis_value(_gp, gp_axisrv)
-				
-				if (abs(controller_x) > 0.2) || (abs(controller_y) > 0.2){
-				
-				_spell_direction = point_direction(0, 0, controller_x, controller_y)
-				
-				}	
-				
-			}
-			
 			
 		
 		}
 		
 	}
 	
+
 	
-	//teleport ability
+	//burst ability
 	if _spell_type = _spell_category[1]{
-		
-		if(_gp = undefined){
 		
 		can_move = false
 		show_debug_message("BURST");
@@ -173,24 +169,6 @@ if _powerup != 0  && _spell_cooldown == false{
 		//If u change the value of alarm 1, also change the burst_charge variable to that value.
 		alarm[1] = 60
 		
-		}
-		else{
-			
-			var controller_x = gamepad_axis_value(_gp, gp_axisrh)
-			var controller_y = gamepad_axis_value(_gp, gp_axisrv)
-			
-			if(abs(controller_x) > 0.2) || (abs(controller_y) > 0.2){
-				
-				x = controller_x;
-				y = controller_y
-			
-			}
-		
-		}
-		show_debug_message("TELEPORT");
-		_spell_cooldown = true;
-		var _teleport_circle = instance_create_layer(x, y, "Inst_projectiles", Obj_burst)
-		alarm[0] = 120;
 		
 	}
 	
@@ -203,27 +181,26 @@ if _powerup != 0  && _spell_cooldown == false{
 	_spell_cooldown = true
 	var Fireball = instance_create_layer(x,y,"inst_projectiles", Obj_fireball)
 		Fireball.speed = 3;
-		
-		if (_gp = undefined){
-			
-		Fireball.direction = point_direction(x, y, mouse_x, mouse_y)
-		
-		}
-		else{
-			
-			var controller_x = gamepad_axis_value(0, gp_axisrh)
-			var controller_y = gamepad_axis_value(0, gp_axisrv)
-			
-			if(abs(controller_x) > 0.2) || (abs(controller_y) > 0.2){
+		if _gp != undefined{
 				
-				Fireball.direction = point_direction(0, 0, controller_x, controller_y)
+				var _aim_direction_x = gamepad_axis_value(_gp, gp_axisrh);
+				var _aim_direction_y = gamepad_axis_value(_gp, gp_axisrv);
+				
+				if abs(_aim_direction_x) > 0.8 || abs(_aim_direction_y) > 0.8 {
+					
+					Fireball.direction = point_direction(0, 0, _aim_direction_x, _aim_direction_y);
+					
+					}
+			
+			} 
+			else {
+				
+				Fireball.direction = point_direction(x, y, mouse_x, mouse_y);
 			
 			}
 		
-		}
 	//creates the collision object so the fireball "knows" when to explode and create the explosion object.
 	//Creation of the explosion is done in the Obj_fireball step code.
-	var FireballCollision = instance_create_layer(mouse_x, mouse_y, "inst_Player", Obj_fireballCollide)
 	alarm[0] = 120
 //alarm 4 destroys the explosion object and alarm 1 is the cooldown
 	}
@@ -266,7 +243,7 @@ if (keyboard_check_pressed(ord("1"))){
 if (keyboard_check_pressed(ord("2"))){
 		
 	_spell_type = _spell_category[1];
-	show_debug_message("Changed to: TELEPORT");
+	show_debug_message("Changed to: BURST");
 	
 }
 
