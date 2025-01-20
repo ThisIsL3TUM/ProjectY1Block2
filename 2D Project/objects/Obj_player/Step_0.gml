@@ -135,23 +135,23 @@ if _powerup != 0  && _spell_cooldown == false{
 			
 			_spell_active = true
 			_spell_cooldown = true
-			//if _gp_active = true{
+			if _gp != undefined{
 				
-				//var _aim_direction_x = gamepad_axis_value(_gp, gp_axisrh);
-				//var _aim_direction_y = gamepad_axis_value(_gp, gp_axisrv);
+				var _aim_direction_x = gamepad_axis_value(_gp, gp_axisrh);
+				var _aim_direction_y = gamepad_axis_value(_gp, gp_axisrv);
 				
-				//if abs(_aim_direction_x) > 0.8 || abs(_aim_direction_y) > 0.8 {
+				if abs(_aim_direction_x) > 0.8 || abs(_aim_direction_y) > 0.8 {
 					
-					//_eldritch.direction = point_direction(x, y, _aim_direction_x, _aim_direction_y);
+					_spell_direction = point_direction(0, 0, _aim_direction_x, _aim_direction_y);
 					
-					//}
+					}
 			
-			//} 
-			//else {
+			} 
+			else {
 				
 				_spell_direction = point_direction(x, y, mouse_x, mouse_y);
 			
-			//}
+			}
 			
 		
 		}
@@ -181,7 +181,24 @@ if _powerup != 0  && _spell_cooldown == false{
 	_spell_cooldown = true
 	var Fireball = instance_create_layer(x,y,"inst_projectiles", Obj_fireball)
 		Fireball.speed = 3;
-		Fireball.direction = point_direction(x, y, mouse_x, mouse_y)
+		if _gp != undefined{
+				
+				var _aim_direction_x = gamepad_axis_value(_gp, gp_axisrh);
+				var _aim_direction_y = gamepad_axis_value(_gp, gp_axisrv);
+				
+				if abs(_aim_direction_x) > 0.8 || abs(_aim_direction_y) > 0.8 {
+					
+					Fireball.direction = point_direction(0, 0, _aim_direction_x, _aim_direction_y);
+					
+					}
+			
+			} 
+			else {
+				
+				Fireball.direction = point_direction(x, y, mouse_x, mouse_y);
+			
+			}
+		
 	//creates the collision object so the fireball "knows" when to explode and create the explosion object.
 	//Creation of the explosion is done in the Obj_fireball step code.
 	alarm[0] = 120
