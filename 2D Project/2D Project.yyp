@@ -47,6 +47,7 @@
   "name":"2D Project",
   "resources":[
     {"id":{"name":"Fnt_menu","path":"fonts/Fnt_menu/Fnt_menu.yy",},},
+    {"id":{"name":"Obj_burst","path":"objects/Obj_burst/Obj_burst.yy",},},
     {"id":{"name":"Obj_buttonBack","path":"objects/Obj_buttonBack/Obj_buttonBack.yy",},},
     {"id":{"name":"Obj_buttonParent","path":"objects/Obj_buttonParent/Obj_buttonParent.yy",},},
     {"id":{"name":"Obj_buttonPlay","path":"objects/Obj_buttonPlay/Obj_buttonPlay.yy",},},
@@ -67,7 +68,6 @@
     {"id":{"name":"Obj_student","path":"objects/Obj_student/Obj_student.yy",},},
     {"id":{"name":"Obj_sword_slash","path":"objects/Obj_sword_slash/Obj_sword_slash.yy",},},
     {"id":{"name":"Obj_teacher","path":"objects/Obj_teacher/Obj_teacher.yy",},},
-    {"id":{"name":"Obj_teleport","path":"objects/Obj_teleport/Obj_teleport.yy",},},
     {"id":{"name":"Obj_title","path":"objects/Obj_title/Obj_title.yy",},},
     {"id":{"name":"Rm_base","path":"rooms/Rm_base/Rm_base.yy",},},
     {"id":{"name":"Rm_class","path":"rooms/Rm_class/Rm_class.yy",},},

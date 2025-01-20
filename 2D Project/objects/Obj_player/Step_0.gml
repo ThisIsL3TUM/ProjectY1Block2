@@ -167,7 +167,11 @@ if _powerup != 0  && _spell_cooldown == false{
 		
 		if(_gp = undefined){
 		
-		x = mouse_x; y = mouse_y;
+		can_move = false
+		show_debug_message("BURST");
+		_spell_cooldown = true;
+		//If u change the value of alarm 1, also change the burst_charge variable to that value.
+		alarm[1] = 60
 		
 		}
 		else{
@@ -185,7 +189,7 @@ if _powerup != 0  && _spell_cooldown == false{
 		}
 		show_debug_message("TELEPORT");
 		_spell_cooldown = true;
-		var _teleport_circle = instance_create_layer(x, y, "Inst_projectiles", Obj_teleport)
+		var _teleport_circle = instance_create_layer(x, y, "Inst_projectiles", Obj_burst)
 		alarm[0] = 120;
 		
 	}
