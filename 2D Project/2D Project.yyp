@@ -206,6 +206,7 @@
     {"id":{"name":"Spr_fireballCollide","path":"sprites/Spr_fireballCollide/Spr_fireballCollide.yy",},},
     {"id":{"name":"Spr_health_heart","path":"sprites/Spr_health_heart/Spr_health_heart.yy",},},
     {"id":{"name":"Spr_kills","path":"sprites/Spr_kills/Spr_kills.yy",},},
+    {"id":{"name":"Spr_menuBg","path":"sprites/Spr_menuBg/Spr_menuBg.yy",},},
     {"id":{"name":"Spr_player_idle","path":"sprites/Spr_player_idle/Spr_player_idle.yy",},},
     {"id":{"name":"Spr_player_walk_down","path":"sprites/Spr_player_walk_down/Spr_player_walk_down.yy",},},
     {"id":{"name":"Spr_player_walk_left","path":"sprites/Spr_player_walk_left/Spr_player_walk_left.yy",},},
