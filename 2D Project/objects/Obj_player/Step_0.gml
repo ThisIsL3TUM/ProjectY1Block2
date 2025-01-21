@@ -29,6 +29,23 @@ if (_gp != undefined){
 _horizontal_move = clamp(_horizontal_move, -1, 1);
 _vertical_move = clamp(_vertical_move, -1, 1);
 
+//Unlocking abilities through quests
+
+if global.q1_complete = true{eb_ul = true}
+if global.q2_complete = true{burst_ul = true}
+if global.q3_complete = true{fb_ul = true}
+
+if (keyboard_check_pressed(ord("Z")))
+	{ global.q1_active = true
+}
+if (keyboard_check_pressed(ord("X")))
+{ if global.kills = 10 && global.q1_active = true{
+	global.q1_complete = true
+	global.kills = 0
+	global.q1_active = false
+	}
+}
+
 //move horizontally
 if _horizontal_move != 0 && can_move = true{
 
@@ -122,21 +139,11 @@ if _melee_attack != 0 {
 
 }
 
-if (keyboard_check_pressed(ord("Z"))){ 
-	eb_ul = true
-}
-if (keyboard_check_pressed(ord("X"))){ 
-	burst_ul = true
-}
-if (keyboard_check_pressed(ord("C"))){ 
-	fb_ul = true
-}
-
 //power up
 if _powerup != 0  && _spell_cooldown == false{
 	
 	//eldritch blast ability
-	if _spell_type = _spell_category[0] && eb_ul = true{
+	if _spell_type = _spell_category[0] {
 		
 		//if _spell_cooldown = false{
 		
@@ -217,7 +224,7 @@ if _powerup != 0  && _spell_cooldown == false{
 }
 
 //timig Eldritch Blast
-if(_spell_active == true) {
+if(_spell_active == true) && eb_ul = true{
 		
 		if(_bullet_counter < 3 ) {
 			if(_timer == 0){
@@ -242,7 +249,7 @@ _timer = (_timer + 1) % 15
 //categorization spells
 
 //changing to Eldritch Blast
-if (keyboard_check_pressed(ord("1"))){
+if (keyboard_check_pressed(ord("1"))) && eb_ul = true{
 		
 	_spell_type = _spell_category[0];
 	show_debug_message("Changed to: ELDRITCH BLAST");
@@ -250,7 +257,7 @@ if (keyboard_check_pressed(ord("1"))){
 }
 
 //changing to Burst
-if (keyboard_check_pressed(ord("2"))){
+if (keyboard_check_pressed(ord("2"))) && burst_ul = true{
 		
 	_spell_type = _spell_category[1];
 	show_debug_message("Changed to: BURST");
@@ -258,7 +265,7 @@ if (keyboard_check_pressed(ord("2"))){
 }
 
 //changing to Fireball
-if (keyboard_check_pressed(ord("3"))){
+if (keyboard_check_pressed(ord("3"))) && fb_ul = true{
 		
 	_spell_type = _spell_category[2];
 	show_debug_message("Changed to: FIREBALL");
@@ -266,6 +273,4 @@ if (keyboard_check_pressed(ord("3"))){
 }
 
 
-if (keyboard_check_pressed(ord("Z")))
-{ global.q1_active = true
-}
+

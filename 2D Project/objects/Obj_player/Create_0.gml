@@ -53,6 +53,10 @@ fb_ul = false
 
 //Quests
 global.q1_active = false
+global.q1_complete = false
 global.q2_active = false
+global.q2_complete = false
 global.q3_active = false
+global.q3_complete = false
 global.kills = 0
+
