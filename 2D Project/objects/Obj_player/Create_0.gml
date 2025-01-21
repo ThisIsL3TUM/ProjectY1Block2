@@ -54,3 +54,17 @@ charge_bar_y = y-20
 
 //tilemap ID
 tree_tilemap = layer_tilemap_get_id("Plants")
+
+//Spell unlocking
+eb_ul = false
+burst_ul = false
+fb_ul = false
+
+//Quests
+global.q1_active = false
+global.q1_complete = false
+global.q2_active = false
+global.q2_complete = false
+global.q3_active = false
+global.q3_complete = false
+global.kills = 0
