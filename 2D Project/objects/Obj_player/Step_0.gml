@@ -45,11 +45,6 @@ if (keyboard_check_pressed(ord("X")))
 	global.q1_active = false
 	}
 }
-if (keyboard_check_pressed(ord("K"))){
-	eb_ul = true
-burst_ul = true
-fb_ul = true
-}
 //move horizontally
 if _horizontal_move != 0 && can_move = true{
 
