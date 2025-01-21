@@ -53,3 +53,16 @@ if global.q3_active = true {
 		draw_text(1181,18,global.kills)
 		}
 }}
+
+if eb_cd = true 
+{
+	draw_sprite_stretched(Spr_bar, 0, 540, 690, (eb_cdVis/eb_cd_max) * 60, 60)
+}
+if burst_cd = true 
+{
+	draw_sprite_stretched(Spr_bar, 0, 640, 690, (burst_cdVis/burst_cd_max) * 60, 60)
+}
+if fb_cd = true 
+{
+	draw_sprite_stretched(Spr_bar, 0, 740, 690, (fb_cdVis/fb_cd_max) * 60, 60)
+}

@@ -40,21 +40,23 @@ _timer = 0
 _bullet_counter = 0
 
 //Cooldown Visualizer Variables
-eb_cdVis = 80
-eb_cd_max = eb_cd
+eb_cdVis = 75
+eb_cd_max = eb_cdVis
+
 burst_cdVis = 120
-burst_cd_max = burst_cd
-fb_cdVis = 100
-fb_cd_max = fb_cd
-//burst_charge = 60
-//burst_charge_max = burst_charge
+burst_cd_max = burst_cdVis
 
-//CD Sprite Variables
-charge_bar_width = 64
-charge_bar_height = 7
-charge_bar_x = x
-charge_bar_y = y-20
+fb_cdVis = 160
+fb_cd_max = fb_cdVis
 
+eb_bar_width = 64
+eb_bar_height = 64
+eb_bar_x = 540
+eb_bar_y = 690
+
+_eb_timer = 75
+_burst_timer = 0
+_fb_timer = 0
 //tilemap ID
 tree_tilemap = layer_tilemap_get_id("Plants")
 

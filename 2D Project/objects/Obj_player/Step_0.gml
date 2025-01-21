@@ -222,7 +222,7 @@ if _powerup != 0{
 		
 	//creates the collision object so the fireball "knows" when to explode and create the explosion object.
 	//Creation of the explosion is done in the Obj_fireball step code.
-	alarm[5] = 120
+	alarm[5] = 160
 //alarm 5 is the cooldown
 	}
 }
@@ -275,6 +275,5 @@ if (keyboard_check_pressed(ord("3"))) && fb_ul = true{
 	show_debug_message("Changed to: FIREBALL");
 	
 }
-
 
 
