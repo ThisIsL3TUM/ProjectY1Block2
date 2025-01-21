@@ -1,3 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-room_goto (Rm_dungeon);
+sprite_index = what_sprite
+image_index = what_image_Index

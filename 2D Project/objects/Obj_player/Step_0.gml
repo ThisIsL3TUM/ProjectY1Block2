@@ -35,14 +35,23 @@ if global.q1_complete = true{eb_ul = true}
 if global.q2_complete = true{burst_ul = true}
 if global.q3_complete = true{fb_ul = true}
 
-if (keyboard_check_pressed(ord("Z")))
-	{ global.q1_active = true
-}
-if (keyboard_check_pressed(ord("X")))
-{ if global.kills = 10 && global.q1_active = true{
+
+{ if global.kills = 1 && global.q1_active = true{
 	global.q1_complete = true
 	global.kills = 0
 	global.q1_active = false
+	}
+}
+{ if global.kills = 1 && global.q2_active = true{
+	global.q2_complete = true
+	global.kills = 0
+	global.q2_active = false
+	}
+}
+{ if global.kills = 1 && global.q3_active = true{
+	global.q3_complete = true
+	global.kills = 0
+	global.q3_active = false
 	}
 }
 //move horizontally
