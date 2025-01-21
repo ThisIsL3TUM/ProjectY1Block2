@@ -24,7 +24,10 @@ can_move = true
 //spell categories
 _spell_category = ["Eldrich Blast", "Teleport", "Fireball"]
 _spell_type = _spell_category[0];
-_spell_cooldown = false
+eb_cd = false
+burst_cd = false
+fb_cd = false
+
 
 //spell activation
 _spell_active = false
@@ -37,14 +40,14 @@ _timer = 0
 _bullet_counter = 0
 
 //Cooldown Visualizer Variables
-eb_cd = 80
+eb_cdVis = 80
 eb_cd_max = eb_cd
-burst_cd = 120
+burst_cdVis = 120
 burst_cd_max = burst_cd
-fb_cd = 100
+fb_cdVis = 100
 fb_cd_max = fb_cd
-burst_charge = 60
-burst_charge_max = burst_charge
+//burst_charge = 60
+//burst_charge_max = burst_charge
 
 //CD Sprite Variables
 charge_bar_width = 64

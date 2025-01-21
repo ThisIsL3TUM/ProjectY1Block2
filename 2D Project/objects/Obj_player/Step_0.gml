@@ -45,7 +45,11 @@ if (keyboard_check_pressed(ord("X")))
 	global.q1_active = false
 	}
 }
-
+if (keyboard_check_pressed(ord("K"))){
+	eb_ul = true
+burst_ul = true
+fb_ul = true
+}
 //move horizontally
 if _horizontal_move != 0 && can_move = true{
 
@@ -140,10 +144,10 @@ if _melee_attack != 0 {
 }
 
 //power up
-if _powerup != 0  && _spell_cooldown == false{
+if _powerup != 0{
 	
 	//eldritch blast ability
-	if _spell_type = _spell_category[0] {
+	if _spell_type = _spell_category[0] && eb_cd = false{
 		
 		//if _spell_cooldown = false{
 		
@@ -151,7 +155,7 @@ if _powerup != 0  && _spell_cooldown == false{
 		if(_spell_active == false){
 			
 			_spell_active = true
-			_spell_cooldown = true
+			eb_cd = true
 			if _gp != undefined{
 				
 				var _aim_direction_x = gamepad_axis_value(_gp, gp_axisrh);
@@ -178,11 +182,11 @@ if _powerup != 0  && _spell_cooldown == false{
 
 	
 	//burst ability
-	if _spell_type = _spell_category[1] && burst_ul = true{
+	if _spell_type = _spell_category[1] && burst_ul = true && burst_cd = false{
 		
 		can_move = false
 		show_debug_message("BURST");
-		_spell_cooldown = true;
+		burst_cd = true;
 		//If u change the value of alarm 1, also change the burst_charge variable to that value.
 		alarm[1] = 60
 		
@@ -190,12 +194,12 @@ if _powerup != 0  && _spell_cooldown == false{
 	}
 	
 	//fireball ability
-	if _spell_type = _spell_category[2] && fb_ul = true{
+	if _spell_type = _spell_category[2] && fb_ul = true && fb_cd = false{
 		
 		show_debug_message("FIREBALL!");
 		//spellDirection variable locks the spell in place. Not too important for this spell. point_direction will also work.
 
-	_spell_cooldown = true
+	fb_cd = true
 	var Fireball = instance_create_layer(x,y,"inst_projectiles", Obj_fireball)
 		Fireball.speed = 3;
 		if _gp != undefined{
@@ -218,8 +222,8 @@ if _powerup != 0  && _spell_cooldown == false{
 		
 	//creates the collision object so the fireball "knows" when to explode and create the explosion object.
 	//Creation of the explosion is done in the Obj_fireball step code.
-	alarm[0] = 120
-//alarm 4 destroys the explosion object and alarm 1 is the cooldown
+	alarm[5] = 120
+//alarm 5 is the cooldown
 	}
 }
 
@@ -232,7 +236,7 @@ if(_spell_active == true) && eb_ul = true{
 				_eldritch_bullet.speed = 5;
 				_eldritch_bullet.direction = _spell_direction
 				_bullet_counter++
-				alarm[0] = 75 //resets cooldown
+				alarm[3] = 75 //resets cooldown
 				}
 			} 
 			else {

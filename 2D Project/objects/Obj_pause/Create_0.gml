@@ -4,4 +4,4 @@ pause = false;
 pauseSurf = -1;
 pauseSurfBuffer = -1;
 resH = 800;
-resW = 1280; 
+resW = 1400; 
