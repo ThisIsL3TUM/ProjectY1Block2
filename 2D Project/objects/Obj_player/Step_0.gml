@@ -29,6 +29,7 @@ if (_gp != undefined){
 _horizontal_move = clamp(_horizontal_move, -1, 1);
 _vertical_move = clamp(_vertical_move, -1, 1);
 
+
 //move horizontally
 if _horizontal_move != 0 && can_move = true{
 
@@ -254,3 +255,7 @@ if (keyboard_check_pressed(ord("3"))){
 	show_debug_message("Changed to: FIREBALL");
 	
 }
+
+//collision trees
+
+move_and_collide(_horizontal_move, _vertical_move, tree_tilemap)

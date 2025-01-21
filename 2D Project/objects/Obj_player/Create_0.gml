@@ -51,3 +51,6 @@ charge_bar_width = 64
 charge_bar_height = 7
 charge_bar_x = x
 charge_bar_y = y-20
+
+//tilemap ID
+tree_tilemap = layer_tilemap_get_id("Plants")

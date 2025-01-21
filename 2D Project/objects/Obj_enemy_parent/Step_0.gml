@@ -11,4 +11,4 @@ var _y_movement = clamp(_target_y - y, -1, 1)
 
 var _direction = point_direction(x, y, _target_x, _target_y)
 
-move_and_collide(_x_movement * _move_speed_enemy, _y_movement * _move_speed_enemy, [_tilemap, Obj_collision_parent])
+move_and_collide(_x_movement * _move_speed_enemy, _y_movement * _move_speed_enemy, [_tilemap, Obj_collision_parent, Obj_editor_wall])
